@@ -36,6 +36,9 @@ h1 {
 a {
     text-decoration: none;
     color: #fff;
+    border: 2px soild rgb(255, 255, 255); 
+    padding: 10px;
+    border-radius: 25px;
 }
 
 /* main container area beneath menu */
@@ -81,6 +84,9 @@ h2, h3 {
             padding: 10px;
             border-radius: 10px;
             margin-bottom: 10px;
+            border: 2px soild rgb(255, 255, 255); 
+            padding: 10px;
+            border-radius: 25px;
         }
 
         #portfolio li:hover {
