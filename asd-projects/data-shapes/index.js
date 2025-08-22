@@ -40,14 +40,15 @@ $(document).ready(function () {
     shape: "circle",
     repeat: 3
   }
+  dataShapes.push(shape)
 // TODO 0 complete
   // TODO 2: add a new property to all data shapes
   for(const currentShape of dataShapes){
     if(currentShape.color === "red"){
-      currentShape.goodBehavior = "bounce"
+      currentShape.goodBehavior = "bounce";
     }
 else if(currentShape.color === "blue"){
-  currentShape.goodBehavior = "blink"
+  currentShape.goodBehavior = "blink";
 }
 else{
   currentShape.goodBehavior = "spin";
@@ -93,8 +94,7 @@ dataShapes[currentIndex];
 
   function badDisplay() {
     // TODO 5-b: call your handleBad function
-    var currentShape = 
-    dataShapes[currentIndex];
+    var currentShape = dataShapes[currentIndex];
     var repeat = currentShape.repeat;
     handleBad(currentShape, currentShape.repeat);
   }
