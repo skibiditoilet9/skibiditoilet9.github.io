@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+       <title>Josue santos</title> 
+       <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <div id="all-contents">
+        <nav>
+            <h1>Josue santos website</h1>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                    <a class="nav-a" href="index.html">Home</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-a" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-a" href="images.html">Photos</a>
+                </li>
+            </ul>
+        </nav>
+<div class="slideshow-container">
+      <div class="mySlides fade" style="display: block;">
+    <div class="numbertext">1 / 10</div>
+    <img src="assets/ants.JPG" style="width:100%">
+    <div class="text">Ants View</div>
+  </div>
+
+   <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">2 / 10</div>
+    <img src="assets/Beauty.JPG" style="width:100%">
+    <div class="text">Beauty</div>
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">3 / 10</div>
+    <img src="assets/CHS.JPG" style="width:100%">
+    <div class="text">School Spirit</div>
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">4 / 10</div>
+    <img src="assets/contrast.JPG" style="width:100%">
+    <div class="text">Contrast</div>
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">5 / 10</div>
+    <img src="assets/lines.JPG" style="width:100%">
+    <div class="text">Lines</div>
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">6 / 10</div>
+    <img src="assets/me.JPG" style="width:100%">
+    <div class="text">me</div>
+  </div>
+
+   <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">7 / 10</div>
+    <img src="assets/shapes.JPG" style="width:100%">
+    <div class="text">Shape</div>
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">8 / 10</div>
+    <img src="assets/Symbol.JPG" style="width:100%">
+    <div class="text">Symbol</div>
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">9 / 10</div>
+    <img src="assets/texture.JPG" style="width:100%">
+  <div class="text">Texture</div> 
+    
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">10 / 10</div>
+    <img src="assets/thirds.JPG" style="width:100%">
+    <div class="text">Rule Of Thirds</div>
+  </div>
+</div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+      </div>
+    </body>
+          <script>
+         let slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 5 seconds
+          }
+          function plusSlides(x) {
+            slideIndex = slideIndex + x
+          }
+  
+        </script>
+
+</HTML>
